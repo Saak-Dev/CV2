@@ -13,10 +13,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-size-adjust: inherit;
+    margin: 0 auto;
+    padding: 22px;
     background-color: #B0B3D9;
 }
 header{
@@ -34,6 +36,7 @@ section{
     box-shadow: 0 2px 4px #0000001a;
     background-color: #0D0F29;
     text-emphasis: bold;
+    justify-content: center;
 }
 h1 {
     margin-top: 0;
@@ -64,11 +67,13 @@ img{
     padding: 10px;
     text-align: left;
     border-radius: 5px;
+     justify-content: center;
     
 }
 #Experience h2{
     margin: 0;
     font-size: 24px;
+     justify-content: center;
 }
 #Experience p{
     font-size: 18px;
@@ -84,8 +89,18 @@ img{
     font-style: italic;
 
 }
-#Contact{
+#Certifications{
     text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: space-between;
+    
+}
+
+#Contact{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -99,17 +114,36 @@ img{
     text-align: left;
 }
 label{
-   display: block;
-  margin-top: 10px;
-  font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+table th {
+    background-color: #1a1d2e;
+    font-weight: bold;
 }
 input, textarea {
   display: block;
   width: 100%;
   max-width: 400px; 
-  margin-top: 5px;
+  margin: 5px auto;
   padding: 8px;
   box-sizing: border-box;
+  background-color:#e8c17f;
 }
 button {
   margin-top: 15px;
@@ -118,6 +152,8 @@ button {
   color: black;
   border: none;
   cursor: pointer;
+  display: block;
+  margin: 15px auto;
 }
 footer{
     background-color: #3A406B;

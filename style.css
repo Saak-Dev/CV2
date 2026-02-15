@@ -170,3 +170,52 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+
+
+@media screen and (max-width: 480px) {
+
+ 
+  header, 
+  main, 
+  section, 
+  .container, 
+  form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+    padding: 20px 10px;     
+    width: 100%;
+  }
+
+ 
+  .profile-pic {
+    max-width: 140px;       
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+ 
+ 
+  .table-wrapper {
+    display: block;
+    overflow-x: auto;      
+    width: 100%;
+  }
+
+  
+  
+  input, 
+  textarea, 
+  button {
+    width: 100%;
+    max-width: 100%;
+    margin: 8px 0;         
+  }
+
+  
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.4rem; }
+  p { font-size: 1rem; }
+}
